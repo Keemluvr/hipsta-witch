@@ -1,19 +1,21 @@
 let sceneImage;
 let characterImage;
 let scenario;
+let songGame;
 
 function preload() {
   sceneImage = loadImage('images/scene/forest.png')
   characterImage = loadImage('images/character/running.png')
+  songGame = loadSound('songs/soundtrack.mp3')
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   scenario = new Scenario(sceneImage, 2.5)
+  songGame.loop()
 }
 
 function draw() {
-  // Character
   scenario.show()
   scenario.move()
   image(characterImage, 0, height-135, 110, 135, 0, 0, 220, 270)
