@@ -40,9 +40,15 @@ and have fun! 🤗
 ## ⚔️ Challenges
 ### Day 1
 
-- [ ] Organize character.js matriz, taking fixes number and replacing for a calculation.;  
+- [ ] Organize character.js matriz, taking fixes number and replacing for a calculation;  
 - [ ] Create a history for hipsta witch. Why does she  walking in forest?;  
 - [ ] Make the own sprites, creating a game with different visual;
 - [ ] Make the image function more clean and organized.
 
+### Day 2
+
+- [ ] Fix jump double in max 2;  
+- [ ] Make a background with appearance 3D using two images different, with speed different. It is the effect paralaxe. Like this, the image from the front need to be transparent;  
+- [ ] Place different elements in your game;
+- [ ] Make a game over page.
 
