@@ -24,11 +24,16 @@ class Character extends Animation {
     this.yInitial = height - this.heightSprite - this.yVariation;
     this.y = this.yInitial;
     this.jumpSpeed = 0;
-    this.gravity = 3;
+    this.gravity = 5;
+    this.heightJump = -50
+    this.jumps = 0
   }
 
   jump() {
-    this.jumpSpeed = -30;
+    if(this.jumps < 2) {
+      this.jumpSpeed = this.heightJump;
+      this.jumps++
+    }
   }
 
   applyGravity() {
@@ -36,6 +41,7 @@ class Character extends Animation {
     this.jumpSpeed += this.gravity;
     if (this.y > this.yInitial) {
       this.y = this.yInitial;
+      this.jumps = 0
     }
   }
 

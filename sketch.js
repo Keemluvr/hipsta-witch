@@ -1,6 +1,9 @@
 let scenario;
 let sceneImage;
 
+// Score
+let score;
+
 // Character
 let character;
 let characterImage;
@@ -108,9 +111,13 @@ const flyingEnemyMatriz = [
 ]
 
 const enemies = []
+
 // Songs
 let songGame;
 let jumpingSound;
+
+// Screen
+let gameOverImage
 
 function preload() {
   sceneImage = loadImage("images/scene/forest.png");
@@ -122,11 +129,14 @@ function preload() {
 
   songGame = loadSound("songs/soundTrack.mp3");
   jumpingSound = loadSound("songs/jumpingSound.mp3");
+
+  gameOverImage = loadImage("images/assets/gameOver.png");
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   scenario = new Scenario(sceneImage, 2.5);
+  score = new Score()
   character = new Character(
     characterMatriz,
     characterImage,
@@ -193,6 +203,8 @@ function draw() {
   scenario.show();
   scenario.move();
 
+  score.show()
+  score.addPoint()
   character.show();
   character.applyGravity();
   // noFill()
@@ -206,9 +218,9 @@ function draw() {
     enemy.move()
 
     if (character.isColliding(enemy)) {
+      image(gameOverImage, width/2 - 200, height/3)
       console.log("colidiu");
-      //noLoop();
+      noLoop();
     }
   })
-  
 }
