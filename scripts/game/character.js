@@ -3,6 +3,7 @@ class Character extends Animation {
     matriz,
     image,
     x,
+    yVariation, 
     widthSprite,
     heightSprite,
     widthCutSprite,
@@ -12,13 +13,15 @@ class Character extends Animation {
       matriz,
       image,
       x,
+      yVariation, 
       widthSprite,
       heightSprite,
       widthCutSprite,
       heightCutSprite
     );
 
-    this.yInitial = height - this.heightSprite;
+    this.yVariation = yVariation
+    this.yInitial = height - this.heightSprite - this.yVariation;
     this.y = this.yInitial;
     this.jumpSpeed = 0;
     this.gravity = 3;

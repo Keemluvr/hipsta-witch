@@ -34,7 +34,7 @@ and have fun! 🤗
 
 ## 🚀 Preview <a name = "deployment"></a>
 
-[🔗 Open](hipsta-witch.vercel.app)
+[🔗 Open](https://hipsta-witch.vercel.app)
 
 
 ## ⚔️ Challenges

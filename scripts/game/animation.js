@@ -1,5 +1,5 @@
 class Animation {
-  constructor(matriz, image, x, widthSprite, heightSprite, widthCutSprite, heightCutSprite) {
+  constructor(matriz, image, x, yVariation, widthSprite, heightSprite, widthCutSprite, heightCutSprite) {
     // animation matriz
     this.matriz = matriz;
     // sprites
@@ -10,8 +10,10 @@ class Animation {
     this.heightSprite = heightSprite;
     // chosen sprite ( > )
     this.x = x;
+    //
+    this.yVariation = yVariation
     // chosen sprite ( v )
-    this.y = height - this.heightSprite;
+    this.y = height - this.heightSprite - this.yVariation;
     // sprite cut size (width)
     this.widthCutSprite = widthCutSprite;
     // sprite cut size (height)
