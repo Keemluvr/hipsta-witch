@@ -129,7 +129,7 @@ function preload() {
 
   soundFormats('ogg', 'mp3');
   songGame = loadSound("songs/soundtrack.mp3");
-  jumpingSound = loadSound("songs/jumpingsound.mp3");
+  jumpingSound = loadSound("songs/jumpsound.mp3");
 
   gameOverImage = loadImage("images/assets/gameOver.png");
 }
