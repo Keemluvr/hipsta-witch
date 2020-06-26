@@ -127,8 +127,9 @@ function preload() {
   bigEnemyImage = loadImage("images/enemies/troll.png");
   flyingEnemyImage = loadImage("images/enemies/flyingDrop.png");
 
-  songGame = loadSound("songs/soundTrack.mp3");
-  jumpingSound = loadSound("songs/jumpingSound.mp3");
+  soundFormats('ogg', 'mp3');
+  songGame = loadSound("songs/soundtrack.mp3");
+  jumpingSound = loadSound("songs/jumpingsound.mp3");
 
   gameOverImage = loadImage("images/assets/gameOver.png");
 }
