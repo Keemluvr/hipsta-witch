@@ -36,6 +36,12 @@ and have fun! 🤗
 
 [🔗 Open](https://hipsta-witch.vercel.app)
 
+## Arts
+
+[Scenario](https://edermunizz.itch.io/free-pixel-art-hill)  
+[Character](https://luizmelo.itch.io/wizard-pack)  
+[Enemies](#)
+
 
 ## ⚔️ Challenges
 ### Day 1

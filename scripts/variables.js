@@ -2,7 +2,17 @@ let game;
 
 // Scenario
 let scenario;
+let scenarioBack1;
+let scenarioBack2;
+let scenarioBack3;
+let scenarioBack4;
+let scenarioFront;
 let sceneImage;
+let sceneImageBack1;
+let sceneImageBack2;
+let sceneImageBack3;
+let sceneImageBack4;
+let sceneImageFront;
 
 // Score
 let score;

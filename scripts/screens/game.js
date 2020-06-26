@@ -5,6 +5,12 @@ class Game {
 
   setup() {
     scenario = new Scenario(sceneImage, 2.5);
+    scenarioBack1 = new Scenario(sceneImageBack1, 3);
+    scenarioBack2 = new Scenario(sceneImageBack2, 3.5);
+    scenarioBack3 = new Scenario(sceneImageBack3, 4);
+    scenarioBack4 = new Scenario(sceneImageBack4, 3);
+    scenarioFront = new Scenario(sceneImageFront, 3.5);
+
     score = new Score();
     character = new Character(
       characterMatriz,
@@ -68,11 +74,21 @@ class Game {
   draw() {
     scenario.show();
     scenario.move();
+    scenarioBack1.show();
+    scenarioBack1.move();
+    scenarioBack2.show();
+    scenarioBack2.move();
+    scenarioBack3.show();
+    scenarioBack3.move();
+    scenarioBack4.show();
+    scenarioBack4.move();
 
     score.show();
     score.addPoint();
     character.show();
     character.applyGravity();
+
+    
 
     const enemy = enemies[this.currentEnemy];
     const visibleEnemy = enemy.x < -enemy.widthSprite;
@@ -92,5 +108,8 @@ class Game {
       image(gameOverImage, width / 2 - 200, height / 3);
       noLoop();
     }
+
+    scenarioFront.show();
+    scenarioFront.move();
   }
 }
