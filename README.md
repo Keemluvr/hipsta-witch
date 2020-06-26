@@ -50,7 +50,7 @@ and have fun! 🤗
 - [x] Fix jump double in max 2;  
 - [ ] Make a background with appearance 3D using two images different, with speed different. It is the effect paralaxe. Like this, the image from the front need to be transparent;  
 - [ ] Place different elements in your game;
-- [ ] Make a game over page.
+- [x] Make a game over page.
 
 ### Day 3
 
