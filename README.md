@@ -54,9 +54,14 @@ and have fun! 🤗
 
 ### Day 3
 
-- [ ] Configure the game so that we have only one enemy appearing at a time;  
+- [x] Configure the game so that we have only one enemy appearing at a time;  
 - [ ] Improve the collision;  
-- [ ] Create initial screen ;
+- [ ] Create initial screen;
 - [ ] Create coins to accumulate points.
+
+### Day 4
+
+- [ ] A different history according different levels;  
+- [ ] Create nes states and levels. 
 
 
